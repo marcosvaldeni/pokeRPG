@@ -14,14 +14,14 @@ const Header: React.FC = () => {
     <header className="mainHeader">
       <div>
 
-      <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" />
 
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Dowload</li>
-            <li>Suport us</li>
-            <li>Contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dowload</a></li>
+            <li><a href="#">Suport us</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
 
         </nav>

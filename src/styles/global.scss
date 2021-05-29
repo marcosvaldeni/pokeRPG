@@ -8,7 +8,7 @@
   --white: #ffffff;
   --gray: #F1F2F6;
   --blue: #3699FF;
-  --yellow: #eba417;
+  --yellow: #FFCC00;
 
   --gray-300: #a8a8a8;
   --gray-700: #333333;
@@ -54,7 +54,7 @@ body {
 }
 
 body, input, textarea, select, button {
-  font: 400 1rem "Roboto", sans-serif;
+  font: 400 1rem 'Nunito', sans-serif;
 }
 
 button {
@@ -62,9 +62,11 @@ button {
 }
 
 a {
-  color: inherit;
+  color: var(--gray-700);
   text-decoration: none;
 }
 
 
 @import './header';
+@import './landing';
+@import './author';
