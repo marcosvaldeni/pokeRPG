@@ -10,7 +10,9 @@
   --blue: #3699FF;
   --yellow: #FFCC00;
 
+  --gray-200: #c4c4c4;
   --gray-300: #a8a8a8;
+  --gray-500: #737373;
   --gray-700: #333333;
 
   --blue-100: #EBF5FF;
@@ -48,7 +50,7 @@ html {
 }
 
 body {
-  background: var(--white);
+  background: url(../assets/background.svg) no-repeat center top 735px;
   color: var(--gray-700);
   -webkit-font-smoothing: antialiased;
 }
@@ -70,3 +72,42 @@ a {
 @import './header';
 @import './landing';
 @import './author';
+@import './about';
+@import './team';
+@import './footer';
+
+// Classes
+
+div.highlight {
+  height: 8rem;
+  background: url(../assets/highlight.svg) no-repeat center / contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+}
+
+div.quote {
+  margin-left: 15%;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+  border-left: solid 5px var(--gray-200);
+  color: var(--gray-500);
+  font-style: italic;
+
+  p {
+    padding: 1rem 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+
+  div.quote {
+    margin-left: 30%;
+  }
+}
