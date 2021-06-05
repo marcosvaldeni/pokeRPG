@@ -18,10 +18,10 @@ const Header: React.FC = () => {
 
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Download</a></li>
-            <li><a href="#">Suport us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/download">Download</a></li>
+            <li><a href="/suport">Suport us</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
 
         </nav>
