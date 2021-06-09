@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          <div  className="footer-links">
+          <div className="footer-links">
 
             <div>
               <h2>Pages</h2>

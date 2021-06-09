@@ -69,17 +69,18 @@ a {
   text-decoration: none;
 }
 
-
 @import './header';
 @import './landing';
 @import './author';
 @import './about';
 @import './team';
 @import './footer';
+@import './_downloadLanding';
 
 // Classes
 
 div.highlight {
+  width: 100%;
   height: 8rem;
   background: url(../assets/highlight.svg) no-repeat center / contain;
   display: flex;

@@ -1,0 +1,146 @@
+.download-landing {
+  background: var(--gray);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    > div {
+      
+      > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        img {
+          width: 175px;
+          height: auto;
+        }
+  
+        > div {
+          background: url(../assets/highlightYellow.svg) no-repeat center / contain;
+          
+          h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--blue);
+          }
+        }
+  
+        p {
+          margin-top: 1rem;
+          text-align: center;
+  
+          a {
+            color: var(--blue);
+          }
+        }
+      }
+
+      > div:nth-child(2) {
+        margin-top: 2rem;
+  
+        h1 {
+          font-size: 1.5rem;
+          font-weight: 900;
+          text-align: center;
+        }
+  
+        p {
+          margin-top: 1rem;
+          line-height: calc(1rem + 10px);
+          text-align: justify;
+        }
+  
+        form {
+          margin-top: 2rem;
+          padding-bottom: 3rem;
+  
+          input {
+            height: 60px;
+            width: 60%;
+            border: none;
+            border-radius: 5px 0px 0px 5px;
+          }
+  
+          button {
+            height: 60px;
+            width: 40%;
+            border: none;
+            border-radius: 0px 5px 5px 0px;
+            background: var(--yellow);
+            text-transform: uppercase;
+            font-size: 1.125rem;
+            font-weight: 900;
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+
+    .container {
+      padding: 0 30px;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    .container {
+      padding-bottom: 3rem;
+      > div {
+        display: flex;
+
+        > div:first-child {
+          width: 35%;
+
+          > div {
+
+            h1 {
+              font-size: 1.7rem;
+            }
+          }
+        }
+
+        > div:nth-child(2) {
+          width: 65%;
+          margin-left: 5%;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h1 {
+            font-size: 2rem;
+          }
+
+          h1, p {
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+
+      > div {
+
+        > div:first-child {
+
+          > div {
+
+            h1 {
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
