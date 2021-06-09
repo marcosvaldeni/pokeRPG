@@ -1,13 +1,15 @@
-
+import Header from '../components/Header';
+import NotFound from '../components/NotFound';
 import Footer from '../components/Footer';
 
-const Download: React.FC = () => {
+const NotFoundPage: React.FC = () => {
   return (
     <>
-      <h1>404</h1>
+      <Header />
+      <NotFound />
       <Footer />
     </>
   );
 }
 
-export default Download;
+export default NotFoundPage;
