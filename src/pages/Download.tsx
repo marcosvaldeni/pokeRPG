@@ -1,6 +1,7 @@
 
 import Header from '../components/Header';
 import DownloadLanding from '../components/DownloadLanding';
+import Contribute from '../components/Contribute';
 import Footer from '../components/Footer';
 
 const Download: React.FC = () => {
@@ -8,6 +9,7 @@ const Download: React.FC = () => {
     <>
       <Header />
       <DownloadLanding />
+      <Contribute />
       <Footer />
     </>
   );

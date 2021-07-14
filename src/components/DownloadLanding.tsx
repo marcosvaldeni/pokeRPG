@@ -15,7 +15,7 @@ const Landing: React.FC = () => {
 
             <p>
               Your download should start automatically. If it 
-              doesn’t, <a href="#">download now</a>.
+              doesn’t, <a href="/">download now</a>.
             </p>
 
           </div>

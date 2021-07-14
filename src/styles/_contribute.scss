@@ -1,0 +1,140 @@
+.contribute {
+  width: 100%;
+  background: linear-gradient(180deg, #F1F2F6 0%, rgba(241, 242, 246, 0) 100%);
+  
+  .container {
+    padding: 1rem 10px;
+
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .contribution-container {
+      margin-bottom: 5rem;
+      padding: 3rem 1rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 30px;
+      background: var(--white);
+      box-shadow: 0px 4px 4px rgba(142, 142, 142, 0.25);
+
+      > div {
+
+        > div {
+          margin-bottom: 2rem;
+          display: flex;
+  
+          input {
+            width: 66%;
+            margin-right: 1rem;
+          }
+  
+          span {
+            width: 33%;
+            padding: 3px 7px;
+            border-radius: 5px;
+            background: var(--blue-100);
+            text-align: center;
+          }
+        }
+      }
+
+      .contribution-sender {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+          width: 30%;
+          padding: 10px 5px;
+          border: none;
+          border-radius: 10px;
+          background: var(--blue);
+          color: var(--white);
+          font-size: 1rem;
+          font-weight: 700;
+        }
+
+        p {
+          width: 30%;
+          text-align: center;
+          font-size: 1rem;
+        }
+
+        span {
+          width: 33%;
+          padding: 3px 7px;
+          border-radius: 5px;
+          background: var(--blue-100);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 420px) {
+    .container {
+      padding: 1rem 30px;
+
+      .contribution-container {
+
+        .contribution-sender { 
+
+          button {
+            padding: 10px 10px;
+          }
+
+          p {
+            text-align: end;
+          }
+        }
+      }
+
+    }
+  }
+
+  @media (min-width: 576px) {
+    .container {
+
+      .contribution-container {
+        padding: 3rem 2rem;
+
+        > div {
+
+          > div {
+            input {
+              margin-right: 1rem;
+            }
+          }
+        }
+
+        .contribution-sender { 
+          button {
+            padding: 10px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      .contribution-container {
+        padding: 3rem 2rem;
+
+        .contribution-sender { 
+          button {
+            padding: 10px 10px;
+          }
+        }
+      }
+    }
+  }
+
+}
